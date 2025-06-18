@@ -20,8 +20,8 @@ if not GROQ_API_KEY:
 def get_llm():
     return ChatGroq(
         groq_api_key=GROQ_API_KEY,
-        model_name="llama-3.3-70b-versatile",  # Pilih beberapa jenis model yang tersedia, analisis tiap hasil
-        temperature=0.2  # Utak atik nilai temperatur untuk mendapatkan hasil yang berbeda
+        model_name="gemma2-9b-it",  # Pilih beberapa jenis model yang tersedia, analisis tiap hasil
+        temperature=0.8  # Utak atik nilai temperatur untuk mendapatkan hasil yang berbeda
     )
 
 # Global QA Chain
